@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <malloc.h>
-#include "SeqList.h"
+#include "main.h"
 
 #define OK 1;
 #define ERROR 0;
@@ -137,6 +137,11 @@ status getPosition(struct seqList *L)
     }
 }
 
+/**
+ * 获取某一位置的元素
+ * @param L
+ * @return
+ */
 status getElement(struct seqList *L)
 {
     int position;
@@ -161,6 +166,11 @@ status getElement(struct seqList *L)
     return OK;
 }
 
+/**
+ * 设置某一位置的元素
+ * @param L
+ * @return
+ */
 status set(struct seqList *L)
 {
     int position,value;
@@ -180,6 +190,11 @@ status set(struct seqList *L)
     return OK;
 }
 
+/**
+ * 插入元素
+ * @param L
+ * @return
+ */
 status insert(struct seqList *L)
 {
     int position,i;
@@ -214,6 +229,11 @@ status insert(struct seqList *L)
     return OK;
 }
 
+/**
+ * 删除某一位置的元素
+ * @param L
+ * @return
+ */
 status deleteByPosition(struct seqList *L)
 {
     int position,i;
