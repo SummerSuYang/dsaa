@@ -4,10 +4,12 @@
 #define DSAA_MAIN_H
 #endif
 
-#define int elemType;
-
-typedef struct Node
+//链表节点的数据类型
+typedef struct NODE
 {
-    elemType data;
+    int data;
     struct Node *next;
 };
+
+//链表头（尾）指针的数据类型
+typedef struct NODE *PNODE;
